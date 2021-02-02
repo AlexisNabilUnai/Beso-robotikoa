@@ -8,7 +8,7 @@ oinarriaren goiko aldean eta bigarrena oinarriaren behekaldean (??)
 handi bat dago, eta bertan, 8mm X 20mm-ko zuriune-barra bat jarriko da M8 X 65mm-ko torloju batekin.
 4- 1M2A eta 1M1A oinarri birakorrak bata bestearen gainean jarriko ditugu, horretarako, lehen pausoan muntatutako torlojuak sartuko ditugu bigarren pausuko xulotxoetan, M5 azkoin
 autoblokatzaileak jarri diren tokian. 3 pausoan sartutako M8 X 65mm torlojua 1M2A-n sartuko da, bertan zulo handi bat badago ere, modu honetan, bi oinarri birakorrak bat izango
-dira.
+dira.    LA BASE CON TORNILLOS A LA TABLA, COMO???
 5- Motor nema 17 luzea, 1M3 pieza imprimatuan sartuko da, goiko aldean polea bat (5 mm) jarri beharko da, eta polean, korda jarri beharko da. Korda aurreko pausoan muntatutako
 piezan (1M2A + 1M1A) jarriko da, modu honen bitartez motorra mugituko du gure oinarri birakorra (korda tente geratu behar da). 1ME pieza inprimatuan lau torloju (M3 X 10mm)
 sartu beharko dira, motorra finkatuta egon dezan. Azkenik, beste lau torloju (M3 X 20mm, allen) jarriko dira pieza inprimatuaren alboetan, eta torlojuen atzeko partean, lau azkoin
@@ -22,5 +22,45 @@ aurreko piezan bezala, 2 azkoin (M4) jarriko dira.
 dira goiko aldean, eta errodamenduaren atzean, azkoin bat (M4). Errondamenduaren aurrekaldean, torloju bat (M4 X 20mm) jarriko da, eta errodamenduaren barrutik sartuko da
 eta M4 azkoinatik aterako da. Azkenik, behekaldean azkoin bat jarriko da (M3). Prozesu hau, bi aldiz egin beharko da, T2M1 pieza inprimatuarekin, pieza berdina da, eta
 honelako bi erabiliko dira beranduago.
-10- 
+10- 2M1 pieza inprimatua erabiliko da pauso honetan, bertan, alboetan, lehen erabilitako T2M1D eta T2M1 pieza inprimatuak joango dira. Alde bakoitzean torloju (M3 X 25mm)
+bat jarriko da, kanpotik 2M1 piezaren barrura joango da, eta T2M1D eta T2M1-ren behekaldean jarritako azkoinetatik (M3) sartuko da.
+11- Ondoren, 2M1 pieza inprimatuan, alboetan, lau azkoin autoblokatzaile (M5) jarriko dira, lau albo bakoitzean, guztira, 8. Kanpoaldetik, albo bakoitzean, motor Nema 23
+motor bat jarriko da, eta kanpotik, motorretatik, lau torloju (M5 X 14mm) sartuko dira eta azkoin autoblokatzailean finkatuko dira, horrela, motorrak finko geratuko dira
+gure piezan.
+12- Motorraren bukaeran (2M1 piezaren kanpotik sartu da, eta barruan, motorraren bukaera dago), polea bat jarriko da, bi motor daudenez, bi polea jarri beharko dira 
+(T5 8mm-koak).
+13- 2M1 piezaren goikaldean, bi zulo handi ikus daiteke, bertan, errodamendu bat (8mm X 22mm X 7mm-koak) jarriko da, bi alde dituenez, bi errodamendu jarriko dira.
+2M2 pieza (pieza hau lehen batutako bi piezak dira, 2M2H eta 2M2M), bi zuloen artean jarriko da, korda erabiliko behar da berriz pieza honetan, korda, poleatik pasa eta
+2M2 piezan jarriko da (lehen bezala, tente geratuko beharko da. Piezan ondo ikusten da kordaren markan pieza inprimatuan, beraz, bertan sartuko dira). Behin korda 
+tente dagoela, barra laua sartuko da errodamendu baten aldetik, eta beste aldetik aterako da (barra alde batetik bestera joango da 2M2 piezaren barrutik pasa ondoren). Hau
+egin ondoren, pieza finkatuko da eta beste atal bat egina egongo da.
+14- Pieza 2M1 piezaren alde batean, 2 zulo ikus daitezke, bertan, kanpoaldetik, 2 tartekatu (M4) sartuko dira. Kanpoaldetik ere, bi torloju sartu beharko dira (M5 X 25mm allen)
+T2M1D eta T2M1 pieza inprimatuak finkatuta geratzeko. 2M2 piezan, aurreko pausoan egindakoa, barra laua sartu da alde batetik eta 2M1 piezatik pasa ondoren, beste aldera
+eraman da. Errodamenduak jarritako lekuan, kanpoaldetik 3 tartekatu (M3) sartuko dira, bi alde daudenez, 6 tartekatuko izango dira guztira. 2M1 pieza inprimatua (tapa), jarriko
+da errodamenduen kanpoaldetik, bi alde daudenez, bi tapa alde bakoitzean jarriko dira. Tapak jarri ondoren, 3 torloju (M3 X 10mm) jarriko dira taparen kanpoaldetik honek
+finkatuta geratu dezan, bi tapa daudenez, 6 torloju erabiliko dira guztira.
+15- Ondoren, goiko aldearen pieza inprimatua erabiliko da. Piezaren goikaldean, 5 torloju (M3 X 16mm) eta torloju bat (M3 X 10mm, goitik ikusita, eskuinaldean kokatzen da) 
+sartuko dira. Atzeko partetik, 4 zirrindola jarriko dira, 4 torloju hortatik pasa dezaten (4 torloju eta 4 zirrindola hauek, albokoak izango dira) eta 2 zilindro jarriko dira
+erdiko bi zuloetan.
+16- Inprimatutako servoaren erroteria eta erroteria librea erabiliko dira. Bi erroteria hauek bi ardatz-formako (pivotante) ondoan kokatuko dira. Orain, lehen muntatutako 
+goiko aldearen pieza inprimatua jarri beharko da erroterien eta ardatz-formako gainean. Behekaldean, hiru zirrindola jarriko dira, eta goikaldeko hiru torlojuekin bat egingo
+dute, pieza honen alboetan, 4 zilindro jarri beharko dira.
+17- Beheko aldearen pieza inprimatua jarriko da, goiko aldearen kontrako lekuan. Bertan, lehen osaturiko piezekin bat egingo da, eta 5 azkoin (M3) jarriko dira dauden 5
+zulotxoetan (goiko aldearen piezan jarritako torlojuak, azkoin honetara iritsi beharko dira, pieza finkatuta egon dezan. Ondoren, piezaren alboetan, inprimatutako ezkerreko
+pintza eta eskuineko pintza jarriko dira, pintza bakoitzeko bi torloju jarriko dira (M3 X 16mm) eta torlojuaren bukaeran, 2 azkoin (M3) pintza bakoitzeko, guztira la azkoin.
+Bukatzeko, pintzaren egitura bukatuta egongo da, eta piezaren oinarrian, 2 torloju (M3 X 16mm) goiko aldean eta beste bi torloju (M3 X 16mm) behekaldean.
+18- Pieza inprimatua 3M1 jarriko da 2M moduluan, hau da 2M-tik deribatutako piezen batura. 3M1 piezan 4 torloju jarriko dira (M4 X 16mm-koak) 2M modulurekin bat egiteko. Ondoren,
+T3M1 pieza inprimatua osatuko da, horretarako, piezaren barruan 3 errodamendu (4mm X 13mm X 5mm) jarriko dira, hiru errodamenduak juntu joan beharko dira, bat bezala.
+Orduan, torloju bat (M4 X 20mm) sartuko da alde batetik, errodamenduetatik pasa, eta beste aldean, M4 azkoin batean sartuko da. Azkenik, T3M1 moduluan, albo batetik, 
+torloju bat (M3 X 40mm) sartuko da, kanpoko aldetik, eta barrukaldean, M3 azkoin bat jarriko da, T3M1 pieza finkatuta geratu dezan.
+19- 3M2C pieza inprimatuan Nema 17 (34mm-koa) motor bat jarriko da. Inprimatutako piezaren albo batean, 2 torloju sartu beharko dira (M3 X 10mm). Motorra eta torlojuak jarri
+ondoren, akoplagailu (8mm-5mm-koa) bat jarriko da motorraren irteeran. Akoplagailuaren ondoren, errodamendu bat (8mm X 22mm X 7mm-koa) jarri beharko da, eta honen bukaeran,
+barra hariztaketa bat (42mm-koa) sartu beharko da. Ondoren, 4M1 pieza inprimatuan, errodamendu bat (8mm X 22mm X 7mm-koa) azkoin autoblokatzaile (M8) baten azpian jarriko da.
+Bukatzeko, tapa bat jarriko da hau ez ikusteko (TBB pieza inprimatua), tapa jarri baino lehen, bi zulotxoetatik, bi tartekatu (M3) jarriko dira, orduan, tapa jarri eta ondoren,
+2 torloju (M3 X 12mm) sartuko dira tapan, eta tartekatuetatik pasatuko dira. Modu honen bitartez, 3M2C eta 4M1 piezak, bat egingo dute, bata bestearen gainean.
+20- Orain, T4M pieza inprimatuan errodamendua sartuko da, eta alde batetik torlojua (M3 X 20mm) eta bestetik, berriz, M3 azkoina. Oraintxe bertan egindako T4M pieza, T3M
+moduluan sartuko da, eta moduluaren kanpoaldetik torloju bat (M3 X 30mm) sartuko da, azkoin (M3) bat jarri ondoren torlojuaren kanpoaldean, T4M pieza mugitu ez dezan.
+Azkenik, T3M moduluaren alboetan bi zulo berdinak daude, bertan, errodamendu bat (8mm X 22mm X 7mm-koa, errodamendu bat alde bakoitzean, guztira 2) sartuko da.
+Paso 4 (lo de abajo de la pinza, el principio)
+
 
