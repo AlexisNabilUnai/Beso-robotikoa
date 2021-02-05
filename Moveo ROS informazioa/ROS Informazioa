@@ -1,1 +1,35 @@
-aaa
+1- Lehendabizi, ziurtatu Ros-ak behar bezala instalatuta daukazula funtzionamenduan dagoen lan-espazio batekin: Ros Kinetic erabili Ubuntu 16.04n (beste banaketa bat baduzu, 
+baliteke gauza batzuk aldatu behar izatea). Gaur egun 'moveo_ros' daukat 'src' karpetan.
+2- Simulazioan mobilizatzeko ibilbideak planifikatu eta gauzatzeko (RVIZ, Moveit osagarriarekin), exekutatu terminaleko komando hau: "roslaunch moveo_moveit_config demo.launch"
+3- Leihoa kargatu ondoren, beheko ezkerreko izkinan "baimendu ik gutxi gorabeherako irtenbideak" markatu. Gero, egin klik "plangintza" fitxan, RVIZeko MotionPlanning panelean. 
+Hautatu helburu-egoera berri bat markagailu interaktiboa arrastaka (bola urdin argia azken efektorean) edo "helburu-egoera hautatu" aukeraren azpian. Helburuaren egoera 
+eguneratzen denean, "Planifikatu eta exekutatu" ibilbidea planifikatu eta gauzatuko du, hasierako egoeratik eguneratutako helburuaren egoerara arte.
+
+Benetako robota mugitzen, robot simulatuaren ibilbideekin sinkronizatuta.
+4- Ziurtatu AccelStepper eta ros_lib liburutegiak deskargatzen dituzula Arduino inguruan. 
+Baldin eta ros_lib lehendik badago Arduinoko liburutegietan (/ liburutegietan), 
+jarraitu arazoak konpontzeko azken aholkua edo "ArmJointState.h: ez dago halako fitxategirik" dioen errore bat lortuko duzu. Ros-ek ros_lib ezabarazten dizu eta birsortzen 
+duzu mezu pertsonalizatu berri bat sartzen duzun bakoitzean.
+5- Aldatu zure robotaren eta RAMPS 1.4ren arteko pinen diseinua 'moveo_moveit_arduino.ino' lanean eta kargatu artxiboa zure Arduinon (mega 2560 erabiltzen ari naiz). 
+Ziurtatu robota eta simulazioa posizio berean daudela (simulazioa posizio bertikalean konfiguratzeko, hautatu "bertikala", "Hautatu helburu-egoerak" RVIZen.
+6-'moveit_convert.cpp 'atalean, stepsPerRevolution matrizea ordezkatzen du bere motor bakoitzaren pausoekin/iraultzarekin (edo mikropazoekin/iraultzarekin). 
+(Oraindik balio horiek ezagutzen ez badituzu, esperimentalki lor dezakezu zenbat mikropazo/iraultza dituzten motorrek MultiStepperTest.ino erabiliz eta emaitzak 
+erregistratuz/behatuz)
+7- Simulazioarekin, exekutatuz gero, exekutatu komando hauetako bakoitza bere terminal bereizian:
+Rosrun rosserial_python serial_node.py/dev/ttyUSB0 (Arduinorekin komunikatzen den nodo rosserial bat ezartzen du)
+Rosrun moveo_moveit moveit_convert (joint_state simulazio-errotazioak pausu bihurtzen ditu eta Arduino script-a harpidetzen zaion joint_steps gaian argitaratzen ditu)
+Rostopic pub gripper_angle std_msgs/UInt16 < angle 0-180> (Gripper_angle argitaratzen du)
+Orain, simulazioan planifikatutako eta gauzatutako edozein ibilbide benetako robotean islatzen da.
+
+
+Direktorioen buruzko informazioa:
+Moveo_urdf: BCN3D Moveo-rako URDF (robot bateratua deskribatzeko fitxategia) dauka. Beharrezkoa da RVIZ simulaziorako eta moveit konfiguraziorako.
+Moveo_Moveit_Config: Moveiterako konfigurazioa, RVIZen osagarri bat duen mugimendua planifikatzeko esparrua, hain zuzen ere.
+Moveo_Moveit: Moveit_convert.cpp:'Joint_state' simulazio-errotazioak ('move_group/fake_controller_joint_states' gaikoa) urrats bihurtzen ditu eta/joint_steps gaiari buruz 
+argitaratzen du. Joint_steps 6 Int16 balioko matrize bat da (kasu honetan 5 artikulazio baino ez ditugun arren), moveit_convert nodoa exekutatzen hasi zenetik artikulazio 
+bakoitzak exekutatutako urrats metatuak irudikatzen dituena.
+
+Move_group_interface_coor_1.cpp: scriptean azken efektorerako pose/posizio bat kodetu dezake eta han ibilbide bat planifikatu/exekutatu. Azken efektorearen egungo 
+posizioa/posizioa ere irakurtzen/igortzen du.
+
+Arazoak konpontzea:
