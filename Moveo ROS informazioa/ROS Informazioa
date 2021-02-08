@@ -32,4 +32,55 @@ bakoitzak exekutatutako urrats metatuak irudikatzen dituena.
 Move_group_interface_coor_1.cpp: scriptean azken efektorerako pose/posizio bat kodetu dezake eta han ibilbide bat planifikatu/exekutatu. Azken efektorearen egungo 
 posizioa/posizioa ere irakurtzen/igortzen du.
 
-Arazoak konpontzea:
+Arazoak konpontzea: 7. urratsaren ondoren, 3 gai berri sortu beharko lirateke:
+
+/joint_steps: motor bakoitza nahi den posiziora mugitzeko beharrezko urratsak.
+/joint_steps_feedback: berdin/joint_steps, salbu eta Arduinok argitaratu duela, Arduinok informazioa behar bezala jasotzen duela egiaztatzeko.
+/Gripper_angle: pintzaren egungo angelua.
+Mando-lerrotik mobilizazioa mugitzeko:
+
+Rostopic pub joint_steps moveo_moveit/ArmJointState < Joint1 Joint2 Joint3 Joint4 Joint5 0>
+Aldatu "Joint1, Joint2, etab. "Artikulazio bakoitza mugitzea nahi duen urrats-kopuruari.
+Erabili rostopic listy bilatu gai horiek gaur egun gauzatzen ari diren egiaztatzeko
+
+Erabili rostopic echo/< topic>, < gaiari buruzko datuak zure terminalean ikusteko
+
+"Errorea: moveo_moveit/ArmJointState.h: no such file or directory" lortzen baduzu, egin urrats hauek terminalean:
+
+CD < Arduino sketchbook>/libraries
+Rm -rf ros_lib
+Rosrun rosserial_arduino make_libraries.py.
+
+
+Softwarearen instalazioa:
+
+
+
+Erlazionatutako liburutegiak instalatzeko 2 aukera dituzu.
+
+(Gomendatua) binarioak instalatzea Ros lantokian
+Arrosseriala instala dezake Arduinorentzat, honako hauek exekutatuz:
+
+
+Sudo apt-get install ros-indigo-rosserial-arduino
+Sudo apt-get install ros-indigo-rosserial
+Instalatzen ari zaren bertsioaren izenarekin ordezkatzen duzu: adibidez, hidro.
+
+Ros lantokiko iturritik instalatzea
+Iturburu-kodea konpilatzeko jarraibideak desberdinak dira groovy + (catkin) eta aurreko bertsioetarako (rosbuild). Hautatu konpilazio-sistema bertsioaren arabera, 
+dagozkion jarraibideak ikusteko.
+
+Rosserial jaurtiketa zoragarritik katalogatua izan da, eta lan fluxua, jaurtiketa indartsuekin eta aurrekoekin alderatuz pixka bat ezberdina da. 
+Erabili nahi duen pakete bakoitzaren gainean liburutegi-sorgailua exekutatu beharrean, behin exekutatu eta instalatutako mezu guztietarako liburutegiak sortzen ditu. 
+Jarraian datozen jarraibideetan, < ws> bere catkin lan-espazioa adierazten du.
+
+CD < ws>/src
+Clon de git https://github.com/ros-drivers/rosserial.git
+CD < ws>
+Katkin_make
+Katkin_make install
+
+Komando horiek github biltegiko rosseriala klonatzen dute, komunikaziorako beharrezkoak diren rosserial_msg-ak sortzen dituzte eta liburutegiko fitxategiak sortzen dituzte
+< ws>/devel/lib direktorioan.
+
+
