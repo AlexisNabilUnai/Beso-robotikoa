@@ -1,2 +1,2 @@
 # Beso-robotikoa
-Beso robotiko baten diseinu eta programazioa egin, 3D inprimagailua, arduino eta TB6065 plakak erabiliz.
+Egindako beso robotikoaren dokumentazioa, bertan, erabilitako materiala, segi dugun muntekatea prozesua, erabilitako 3D piezak etabar eskainita.
