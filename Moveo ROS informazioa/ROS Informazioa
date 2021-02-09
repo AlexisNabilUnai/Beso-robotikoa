@@ -83,4 +83,39 @@ Katkin_make install
 Komando horiek github biltegiko rosseriala klonatzen dute, komunikaziorako beharrezkoak diren rosserial_msg-ak sortzen dituzte eta liburutegiko fitxategiak sortzen dituzte
 < ws>/devel/lib direktorioan.
 
+Arduinoa konektatzeko:
+ls -l /dev | grep ACM (aarib a la izkierda)
+sudo chmod 777 /dev/ttyACM0 (aarib a la izkierda)
+
+Aktibatuta dagoen ikusteko, fure lanerako karpeta: echo $ROS_PACKAGE_PATH
+
+/home/ros/catkin_ws/src:/opt/ros/kinetic/share    (ez bada hau agertzen)
+
+source /home/ros/catkin_ws/devel/setup.bash     (hau idatzi) (aarib a la izkierda)
+
+
+roslaunch: pakete asko batera irekitzeko da. Kasu honetan gure robota martxan jartzeko erabiliko dugu.
+
+Rosrun: artxibo bat martxan jartzeko. Kasu honetan gure robotaren mugimenduetarako
+
+
+ROBOTA RVIZ SOFTWAREAN KONTROLATZEKO MOVEIT BITARTEZ (grafikoa)
+
+Lehenengo pausoak:
+
+roslaunch moveo_moveit_config demo.launch (arriba izkierda)
+rosrun moveo_moveit moveit_convert (derecha abajo)
+rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=57600 (Arriba derecha)
+
+Martxan jarri ondoren:
+
+psizioak irakurtzeko: rostopic echo /joint_states
+
+posizioak idazteko: 
+eskuaren angelua idazteko: rostopic pub /gripper eta tabuladorearekin bete hau lortu arte:
+
+		rostopic pub /gripper_angle std_msgs/UInt16 "data: 0"
+
+Robota python bidez mugitzeko: rosrun moveo_moveit moveo_objrec_publisher.py
+
 
